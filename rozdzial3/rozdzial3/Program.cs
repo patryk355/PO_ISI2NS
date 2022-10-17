@@ -7,7 +7,7 @@ namespace Rozdzial3
         static void Main(string[] args)
         {
             // zadanie 3.1
-            /*int year;
+            int year;
             Console.WriteLine("Podaj rok: ");
             year = int.Parse(Console.ReadLine());
             if (year < 0)
@@ -21,32 +21,35 @@ namespace Rozdzial3
                 {
                     Console.WriteLine("Rok nie jest przestepny");
 
-                } else
+                }
+                else
                 {
                     Console.WriteLine("Rok jest przestępny");
                 }
-            } else
+            }
+            else
             {
                 Console.WriteLine("Rok nie jest przestepny");
-            }*/
+            }
 
             // zadanie 3.2
-            /*int a, b;
+            int a, b;
             Console.WriteLine("Podaj liczbe calkowita: ");
             a = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj liczbe calkowita: ");
             b = int.Parse(Console.ReadLine());
 
-            if (a % b == 0) 
-            { 
+            if (a % b == 0)
+            {
                 Console.WriteLine("Liczba {0} jest dzielnikiem liczby {1}", b, a);
-            } else
+            }
+            else
             {
                 Console.WriteLine("Liczba {0} nie jest dzielnikiem liczby {1}", b, a);
-            }*/
+            }
 
             // zadanie 3.3
-            /*double num1, num2, num3, tmp;
+            double num1, num2, num3, tmp;
             Console.WriteLine("Podaj liczbe");
             num1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj liczbe");
@@ -59,17 +62,17 @@ namespace Rozdzial3
             else if (num3 > num1 && num3 > num2) tmp = num3;
             else tmp = num1;
 
-            Console.WriteLine("Najwieksza z podanych liczb to: {0}", tmp);*/
+            Console.WriteLine("Najwieksza z podanych liczb to: {0}", tmp);
 
             // zadanie 3.4
-            /*double value1, value2, score = 0.0;
+            double value1, value2, score = 0.0;
             Console.WriteLine("Podaj liczbe: ");
             value1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj druga liczbe: ");
             value2 = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj znak operacji: ");
-            char type = char.Parse(Console.ReadLine()); 
-            
+            char type = char.Parse(Console.ReadLine());
+
             switch (type)
             {
                 case '+':
@@ -85,7 +88,8 @@ namespace Rozdzial3
                     if (value2 == 0)
                     {
                         Console.WriteLine("Nie mozna dzielic przez 0!");
-                    } else
+                    }
+                    else
                     {
                         score = value1 / value2;
                     }
@@ -94,10 +98,10 @@ namespace Rozdzial3
                     Console.WriteLine("Podano zly znak operacji. Dostepne znaki: +, -, /, *");
                     break;
             }
-            Console.WriteLine("Wynik to: {0}", score);*/
+            Console.WriteLine("Wynik to: {0}", score);
 
             // zadanie 3.5
-            /*double delta, wspA, wspB, wspC;
+            double delta, wspA, wspB, wspC;
             Console.WriteLine("Podaj wspolczynnik a: ");
             wspA = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj wspolczynnik b: ");
@@ -108,10 +112,10 @@ namespace Rozdzial3
             delta = wspB * wspB - 4 * wspA * wspC;
             if (delta > 0) Console.WriteLine("Rownanie ma dwa pierwiastki");
             else if (delta == 0) Console.WriteLine("Rownanie ma jeden pierwiastek");
-            else Console.WriteLine("Rownanie nie ma pierwiastkow");*/
+            else Console.WriteLine("Rownanie nie ma pierwiastkow");
 
             // zadanie 3.6
-            /*double masa, wzrost, BMI = 0.0;
+            double masa, wzrost, BMI = 0.0;
             Console.WriteLine("Podaj mase w kg");
             masa = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj wzrost w metrach");
@@ -119,7 +123,7 @@ namespace Rozdzial3
             BMI = masa / (wzrost * wzrost);
             string kat;
             if (BMI < 18.5)
-            {   
+            {
                 if (BMI < 16.0) kat = "wyglodzenie";
                 else if (BMI >= 16.0 && BMI < 16.99) kat = "wychudzenie";
                 else kat = "niedowaga";
@@ -136,10 +140,10 @@ namespace Rozdzial3
                 else if (BMI >= 35.0 && BMI < 39.99) kat = "otylosc II stopnia";
                 else kat = "otylosc III stopnia";
                 Console.WriteLine("Nadwaga, kategoria: {0}", kat);
-            }*/
+            }
 
             // zadanie 3.7
-            /*Console.WriteLine("Wpisz nr dnia tygodnia");
+            Console.WriteLine("Wpisz nr dnia tygodnia");
             string numer = Console.ReadLine();
             switch (numer)
             {
@@ -167,31 +171,31 @@ namespace Rozdzial3
                 default:
                     Console.WriteLine("Nie ma takiego dnia tygodnia");
                     break;
-            }*/
+            }
 
             // zadanie 3.8
-            /*double srednia;
+            double srednia;
             Console.WriteLine("Podaj średnią: ");
             srednia = double.Parse(Console.ReadLine());
             if (srednia >= 2.00 && srednia <= 3.99)
             {
                 Console.WriteLine("Wysokosc stypendium to: 0.00zl");
-            } 
+            }
             else if (srednia >= 4.00 && srednia <= 4.79)
             {
                 Console.WriteLine("Wysokosc stypendium to: 350.00zl");
-            } 
+            }
             else if (srednia >= 4.80 && srednia <= 5.00)
             {
                 Console.WriteLine("Wysokosc stypendium to: 550.00zl");
-            } 
+            }
             else
             {
                 Console.WriteLine("Podano złą średnią");
-            }*/
+            }
 
             // zadanie 3.9
-            /*char wariant;
+            char wariant;
             string figura = "";
             Console.WriteLine("Wybierz wariant a, b, c lub d");
             wariant = char.Parse(Console.ReadLine());
@@ -210,10 +214,10 @@ namespace Rozdzial3
                     figura = "  ****\n  *  *\n  *  *\n  ****";
                     break;
             }
-            Console.WriteLine(figura);*/
+            Console.WriteLine(figura);
 
             // zadanie 3.10
-            /*int n, wynik = 1;
+            int n, wynik = 1;
             Console.WriteLine("Podaj dodatnia liczbe calkowita n: ");
             n = int.Parse(Console.ReadLine());
 
@@ -222,34 +226,35 @@ namespace Rozdzial3
                 for (int i = 1; i <= n; i++) wynik *= i;
             }
             else if (n == 0) wynik = 1;
-            else {
+            else
+            {
                 Console.WriteLine("Liczba nie moze byc ujemna");
                 return;
             }
 
-            Console.WriteLine("{0}! = {1}", n, wynik);*/
+            Console.WriteLine("{0}! = {1}", n, wynik);
 
             // zadanie 3.11
-            /*int iloscLiczb = 0, sumaLiczb = 0, liczba = 1; ;
+            int iloscLiczb = 0, sumaLiczb = 0, liczba = 1; ;
             while (sumaLiczb <= 100)
             {
                 sumaLiczb += liczba;
                 iloscLiczb++;
                 liczba++;
             }
-            Console.WriteLine("Aby suma przekroczyla wartosc 100 nalezy dodac do siebie {0} kolejnych liczb calkowitych", iloscLiczb);*/
+            Console.WriteLine("Aby suma przekroczyla wartosc 100 nalezy dodac do siebie {0} kolejnych liczb calkowitych", iloscLiczb);
 
             // zadanie 3.12
-            /*int calkowita = 1;
+            int calkowita = 1;
             while (calkowita != 0)
             {
                 Console.WriteLine("Podaj liczbe calkowita: ");
                 calkowita = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("Koniec programu, poniewaz podano 0");*/
+            Console.WriteLine("Koniec programu, poniewaz podano 0");
 
             // zadanie 3.13
-            /*int naturalna = 0, sumaSzeregu = 0;
+            int naturalna = 0, sumaSzeregu = 0;
             Console.WriteLine("Podaj liczbe naturalna n: ");
             naturalna = int.Parse(Console.ReadLine());
 
@@ -257,13 +262,13 @@ namespace Rozdzial3
 
             for (int i = 1; i <= naturalna; i++)
             {
-                if (i % 2 == 0) sumaSzeregu -= i; 
+                if (i % 2 == 0) sumaSzeregu -= i;
                 else sumaSzeregu += i;
             }
-            Console.WriteLine("Suma szeregu wynosi {0}", sumaSzeregu);*/
+            Console.WriteLine("Suma szeregu wynosi {0}", sumaSzeregu);
 
             // zadanie 3.14
-            /*int number = 1, podzielnik = 1, sumaPodzielnikow = 0;
+            int number = 1, podzielnik = 1, sumaPodzielnikow = 0;
             Console.WriteLine("Podaj liczbe: ");
             number = int.Parse(Console.ReadLine());
 
@@ -276,8 +281,34 @@ namespace Rozdzial3
                 podzielnik++;
             }
             if (sumaPodzielnikow == number) Console.WriteLine("{0} jest liczba doskonala", number);
-            else Console.WriteLine("{0} nie jest liczba doskonala", number);*/
-           
+            else Console.WriteLine("{0} nie jest liczba doskonala", number);
+
+            // zadanie 3.15
+            int licznik = 0;
+            string kombinacja = "";
+
+            for (int m1 = 0; m1 <= 10; m1++)
+            {
+                for (int m2 = 0; m2 <= 5; m2++)
+                {
+                    for (int m5 = 0; m5 <= 2; m5++)
+                    {
+                        if (m1 * 1 + m2 *2 + m5 *5 == 10)
+                        {
+                            licznik++;
+                            Console.WriteLine("Kombinacja nr {licznik}: ");
+                            if (m1 > 0) kombinacja += "1zł*" + m1 + " ";
+                            if (m2 > 0) kombinacja += "2zł*" + m2 + " ";
+                            if (m5 > 0) kombinacja += "5zł*" + m5 + " ";
+                            Console.WriteLine(kombinacja + "\n");
+                            kombinacja = "";
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine("10zl mozna wyplacic na {0} sposobow", licznik);
+
             Console.ReadKey();
         }
     }
