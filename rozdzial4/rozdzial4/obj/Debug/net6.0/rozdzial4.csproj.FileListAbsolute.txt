@@ -1,0 +1,15 @@
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\bin\Debug\net6.0\rozdzial4.exe
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\bin\Debug\net6.0\rozdzial4.deps.json
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\bin\Debug\net6.0\rozdzial4.runtimeconfig.json
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\bin\Debug\net6.0\rozdzial4.dll
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\bin\Debug\net6.0\rozdzial4.pdb
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.csproj.AssemblyReference.cache
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.AssemblyInfoInputs.cache
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.AssemblyInfo.cs
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.csproj.CoreCompileInputs.cache
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.dll
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\refint\rozdzial4.dll
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.pdb
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\rozdzial4.genruntimeconfig.cache
+C:\Users\Patryk\Desktop\c_sharp_projekty\rozdzial4\rozdzial4\obj\Debug\net6.0\ref\rozdzial4.dll
