@@ -7,7 +7,7 @@ namespace Rozdzial4
         static void Main(string[] args)
         {
             // zadanie 4.1
-            /*int n;
+            int n;
             Console.WriteLine("Podaj rozmiar tablicy: ");
             n = int.Parse(Console.ReadLine());
             double[] tab = new double[n];
@@ -20,28 +20,28 @@ namespace Rozdzial4
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine(tab[i]);
-            }*/
+            }
 
             // zadanie 4.2
-            /*int[] tab1 = { -5, 0, 2, 4, 11, -81, -17, 2, 3, 99};
+            int[] tab1 = { -5, 0, 2, 4, 11, -81, -17, 2, 3, 99 };
             int[] tab2 = new int[10];
             int idx = 0;
-            foreach(int el in tab1)
+            foreach (int el in tab1)
             {
                 if (el > 0)
                 {
                     tab2[idx] = el;
                     idx++;
-                }   
+                }
             }
 
-            foreach(int el in tab2)
+            foreach (int el in tab2)
             {
                 Console.WriteLine(el);
-            }*/
+            }
 
             // zadanie 4.3
-            /*int rozmiar;
+            int rozmiar;
             Console.WriteLine("podaj rozmiar");
             rozmiar = int.Parse(Console.ReadLine());
             int[] tab3 = new int[rozmiar];
@@ -75,10 +75,10 @@ namespace Rozdzial4
             Console.WriteLine("Najwieksza wartosc to {0}", najwieksza);
             Console.WriteLine("Najmniejsza wartosc to {0}", najmniejsza);
             Console.WriteLine("Srednia wartosci elementow to {0}", srednia);
-            Console.WriteLine("Liczba dodatnich elementow to {0}", liczbaDodatnich);*/
+            Console.WriteLine("Liczba dodatnich elementow to {0}", liczbaDodatnich);
 
             // zadanie 4.4
-            /*int iloscLiczbPierwszych = 0;
+            int iloscLiczbPierwszych = 0;
             Random rand = new Random();
             int[] tab4 = new int[100];
             for (int i = 0; i < tab4.Length; i++)
@@ -91,7 +91,7 @@ namespace Rozdzial4
                 Console.WriteLine(tab4[i]);
             }
 
-            foreach (int el in tab4) 
+            foreach (int el in tab4)
             {
                 int licznik = 0;
                 for (int i = 1; i <= el; i++)
@@ -106,10 +106,10 @@ namespace Rozdzial4
                     iloscLiczbPierwszych++;
                 }
             }
-            Console.WriteLine("Ilosc liczb pierwszych w tej tablicy wynosi: {0}", iloscLiczbPierwszych);*/
+            Console.WriteLine("Ilosc liczb pierwszych w tej tablicy wynosi: {0}", iloscLiczbPierwszych);
 
             // zadanie 4.5
-            /*int roz5;
+            int roz5;
             Console.WriteLine("Podaj rozmiar tablicy");
             roz5 = int.Parse(Console.ReadLine());
             int[] tab5 = new int[roz5];
@@ -122,17 +122,23 @@ namespace Rozdzial4
 
             for (int i = 1; i < tab5.Length; i++)
             {
-                tab5copy[i] = tab5[i-1];
+                tab5copy[i] = tab5[i - 1];
             }
             tab5copy[0] = tab5[tab5.Length - 1];
             Console.WriteLine("tab5copy:");
             for (int i = 0; i < tab5copy.Length; i++)
             {
                 Console.WriteLine(tab5copy[i]);
-            }*/
+            }
 
             // zadanie 4.6
-            /*double[,] tab6 = { { 1.4, 2.2 }, { 3.0, 4.1 }, { -5.62, 6.725 }, { 7.0, 8.1 }, { -9.1, 10.2 } };
+            double[,] tab6 = new double[5, 5] {
+                { 1.4, 2.2, 1.4, 2.2, 2.1 },
+                { 1.4, 2.2, 1.4, 2.2, 2.1 },
+                { 1.4, 2.2, 1.4, 2.2, 2.1 },
+                { 1.4, 2.2, 1.4, 2.2, 2.1 },
+                { 1.4, 2.2, 1.4, 2.2, 2.1 }
+            };
             double sumaNaPrzekatnej = 0;
 
             for (int i = 0; i < tab6.GetLength(0); i++)
@@ -146,96 +152,64 @@ namespace Rozdzial4
                     }
                 }
             }
-            Console.WriteLine("Suma elementow na przekatnej wynosi: ", sumaNaPrzekatnej);*/
+            Console.WriteLine("Suma elementow na przekatnej wynosi: {0}", sumaNaPrzekatnej);
 
             // zadanie 4.7
+            int[,] macierzA = new int[2, 3] { { 2, 4, 5 }, { 5, 6, 1 } };
+            int[,] macierzB = new int[2, 3] { { -5, 11, 2 }, { 7, 2, -1 } };
+            int[,] macierzWynikowa = new int[2, 3];
+
+            for (int i = 0; i < 2; i++)
+                for (int j = 0; j < 3; j++)
+                    macierzWynikowa[i, j] = macierzA[i, j] + macierzB[i, j];
+
+            Console.WriteLine("Macierz wynikowa wynosi: ");
+            for (int i = 0; i < 2; i++)
+            {
+                string line = "";
+                for (int j = 0; j < 3; j++)
+                {
+                    line += macierzWynikowa[i, j] + " ";
+                }
+                Console.WriteLine(line);
+            }
 
             // zadanie 4.8
-            /*string[,] dniTygodnia;
-            dniTygodnia = new string[7, 3];  
-            dniTygodnia[0, 0] = "poniedzialek";
-            dniTygodnia[1, 0] = "wtorek";
-            dniTygodnia[2, 0] = "sroda";
-            dniTygodnia[3, 0] = "czwartek";
-            dniTygodnia[4, 0] = "piatek";
-            dniTygodnia[5, 0] = "sobota";
-            dniTygodnia[6, 0] = "niedziela";
-
-            dniTygodnia[0, 1] = "monday";
-            dniTygodnia[1, 1] = "tuesday";
-            dniTygodnia[2, 1] = "wednesday";
-            dniTygodnia[3, 1] = "thursday";
-            dniTygodnia[4, 1] = "friday";
-            dniTygodnia[5, 1] = "saturday";
-            dniTygodnia[6, 1] = "sunday";
-
-            dniTygodnia[0, 2] = "montag";
-            dniTygodnia[1, 2] = "dienstag";
-            dniTygodnia[2, 2] = "mittwoch";
-            dniTygodnia[3, 2] = "donnerstag";
-            dniTygodnia[4, 2] = "freitag";
-            dniTygodnia[5, 2] = "samstag";
-            dniTygodnia[6, 2] = "sonntag";
-            
-            for (int i = 0; i < 3; i++)
+            string[,] dniTygodnia = new string[7, 3]
             {
-                for (int j = 0; j < 7; j++)
-                {
-                    Console.Write("{0,1}",dniTygodnia[i,j]);
-                }
-            }*/
+                { "poniedzialek", "monday", "montag" },
+                { "wtorek", "tuesday", "dienstag" },
+                { "sroda", "wednesday", "mittwoch" },
+                { "czwartek", "thursday", "donnerstag" },
+                { "piatek", "friday", "freitag" },
+                { "sobota", "saturday", "samstag" },
+                { "niedziela", "sunday", "sonntag" },
+            };
+
+            for (int i = 0; i < 7; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                    Console.Write("{0,1} ", dniTygodnia[i, j]);
+                Console.WriteLine("\n");
+            }
 
             // zadanie 4.9
-            /*string tekst1;
-            Console.WriteLine("Wprowadz tekst");
-            tekst1 = Console.ReadLine();
+            string tekst1;
             int iloscWyrazow = 0;
             string[] tab9;
+            Console.WriteLine("Wprowadz tekst");
+            tekst1 = Console.ReadLine();
             tab9 = tekst1.Split();
             iloscWyrazow = tab9.Length;
-            Console.WriteLine("Liczba wyrazow w tekscie to: {0}", iloscWyrazow);*/
+            Console.WriteLine("Liczba wyrazow w tekscie to: {0}", iloscWyrazow);
 
             // zadanie 4.10
-            /*string data;
+            string data;
             Console.WriteLine("Podaj date w formacie DD-MM-RRRR");
             data = Console.ReadLine();
-            string[] miesiace = { "styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec","lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien" };
+            string[] miesiace = { "styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien" };
             string miesiac = data.Substring(3, 2);
-            Console.WriteLine(miesiace[int.Parse(miesiac)-1]);*/
-
-            // zadanie 4.11
-            /*string tekst2;
-            Console.WriteLine("podaj tekst");
-            tekst2 = Console.ReadLine();
-            if (tekst2 == null) return;
-            for (int i = 0; i < tekst2.Length; i++)
-            {
-                int licznik = 0;
-                for (int j = 0; j < tekst2.Length; j++)
-                {
-                    if (i == j)
-                    {
-                        continue;
-                    } else
-                    {
-                        if (tekst2[i] == tekst2[j])
-                        {
-                            licznik++;
-                        }
-                    }
-                }
-                licznik++;
-                Console.WriteLine("{0} wystepuje {1} razy", tekst2[i], licznik);
-            }*/
-
-            // zadanie 4.12
-            
-            // zadanie 4.13
-
-            // zadanie 4.14
-
-            // zadanie 4.15
-
+            Console.WriteLine(miesiace[int.Parse(miesiac) - 1]);
 
             Console.ReadKey();
         }

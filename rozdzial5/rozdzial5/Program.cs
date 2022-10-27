@@ -88,30 +88,41 @@ namespace Rozdzial5
             }
             Console.WriteLine("Suma cyfr liczby {0} wynosi {1}", liczba, wynik);
         }
+        // 5.9
+        static int CiagFibonacciego(int n)
+        {
+            if ((n==1) || (n==2)) return 1;
+            else return CiagFibonacciego(n-1)+CiagFibonacciego(n-2);
+        }
+        static int Oblicz(int n)
+        {
+            if (n <= 1) return (1);
+            else return (n + Oblicz(n - 1));
+        }
         static void Main(string[] args)
         {
             // 5.1
-            /*double stopnie = zamienStopnie(140);
-            Console.WriteLine(stopnie);*/
+            double stopnie = zamienStopnie(140);
+            Console.WriteLine(stopnie);
 
             // 5.2
-            /*bool czyNalezy = czyNalezyDoPrzedzialu(2, 8, 5);
-            Console.WriteLine(czyNalezy);*/
+            bool czyNalezy = czyNalezyDoPrzedzialu(2, 8, 5);
+            Console.WriteLine(czyNalezy);
 
             // 5.3
-            /*double x, y;
+            double x, y;
             Console.WriteLine("podaj wsp x");
             x = double.Parse(Console.ReadLine());
             Console.WriteLine("podaj wsp y");
             y = double.Parse(Console.ReadLine());
-            Przesun(x, y);*/
+            Przesun(x, y);
 
             // 5.4
-            /*int[] tab = { 1, 4, 6, 8, 2 };
-            Pomnoz(tab, 2);*/
+            int[] tab = { 1, 4, 6, 8, 2 };
+            Pomnoz(tab, 2);
 
             // 5.5
-            /*int dlugosc, szerokosc;
+            int dlugosc, szerokosc;
             char znak;
             Console.WriteLine("podaj dlugosc prostokata");
             dlugosc = int.Parse(Console.ReadLine());
@@ -119,27 +130,36 @@ namespace Rozdzial5
             szerokosc = int.Parse(Console.ReadLine());
             Console.WriteLine("podaj znak prostokata");
             znak = char.Parse(Console.ReadLine());
-            Rysuj(dlugosc, szerokosc, znak);*/
+            Rysuj(dlugosc, szerokosc, znak);
 
             // 5.7
-            /*int liczbaX, liczbaN;
+            int liczbaX, liczbaN;
             Console.WriteLine("Podaj liczbe naturalna x");
             liczbaX = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj liczbe naturalna n");
             liczbaN = int.Parse(Console.ReadLine());
-            ObliczWyrazenie(liczbaX, liczbaN);*/
+            ObliczWyrazenie(liczbaX, liczbaN);
 
             // 5.8
-            /*int liczba8;
+            int liczba8;
             Console.WriteLine("podaj liczbe calkowita");
             liczba8 = int.Parse(Console.ReadLine());
-            ObliczSumeCyfr(liczba8);*/
+            ObliczSumeCyfr(liczba8);
 
             // 5.9
-
+            int n;
+            Console.WriteLine("Podaj n");
+            n = int.Parse(Console.ReadLine());
+            if (n < 0)
+            {
+                Console.WriteLine("n nie moze byc ujemne!");
+                return;
+            }
+            Console.WriteLine("{0}-ty wyraz ciagu Fibonacciego wynosi: {1}", n, CiagFibonacciego(n));
 
             // 5.10
-            
+            int wynik10 = Oblicz(5);
+            Console.WriteLine(wynik10);
 
             Console.ReadKey();
         }
